@@ -11,6 +11,7 @@
                  [org.xerial/sqlite-jdbc "3.34.0"]]
   :plugins [[duct/lein-duct "0.12.3"]]
   :main ^:skip-aot umbrella-weather.main
+  :uberjar-name "umbrella-weather.jar"
   :resource-paths ["resources" "target/resources"]
   :prep-tasks     ["javac" "compile" ["run" ":duct/compiler"]]
   :middleware     [lein-duct.plugin/middleware]
